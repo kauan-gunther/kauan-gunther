@@ -36,7 +36,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kauan-gunther/kauan-gunther/output/pacman-contribution-graph-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kauan-gunther/kauan-gunther/output/pacman-contribution-graph.svg">
-    <img src="https://raw.githubusercontent.com/kauan-gunther/kauan-gunther/output/pacman-contribution-graph.svg" width="95%">
+    <img src="https://raw.githubusercontent.com/kauan-gunther/kauan-gunther/output/pacman-contribution-graph.svg" width="95%" height="160em">
   </picture>
 </div>
 
@@ -47,7 +47,7 @@
   <a href="https://www.facebook.com/kauan-gunther" target="_blank">
     <img src="https://img.shields.io/badge/Facebook-32CD32?style=flat-square&logo=facebook&logoColor=black"/>
   </a>
-  <a href="mailto:kauangunther1011@gmail.com">
+  <a href="mailto:kauangunther1011@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/Gmail-32CD32?style=flat-square&logo=gmail&logoColor=black"/>
   </a>
   <a href="https://www.linkedin.com/in/kauan-gunther" target="_blank">
