@@ -1,11 +1,10 @@
 name: generate pacman game
 
 on:
-  schedule:
-    # Roda uma vez por dia à meia-noite UTC
-    - cron: "0 0 * * *"
-  workflow_dispatch: # Permite disparo manual
-  push:
+  schedule: # Run automatically every 24 hours
+    - cron: "0 */24 * * *"
+  workflow_dispatch: # Allows manual triggering
+  push: # Runs on every push to the main branch
     branches:
       - main
 
@@ -17,21 +16,23 @@ jobs:
     timeout-minutes: 5
 
     steps:
-      # 1️⃣ Fazer checkout do repositório
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 2️⃣ Gerar o pacman contribution graph
-      - name: Generate pacman-contribution-graph.svg
+      - name: Configurar Git
+        run: |
+          git config --global user.name "kauan-gunther"
+          git config --global user.email "kauangunther11@gmail.com"
+
+      - name: generate pacman-contribution-graph.svg
         uses: abozanona/pacman-contribution-graph@main
         with:
-          github_user_name: "kauan-gunther" # substitua pelo seu username se quiser fixo
+          github_user_name: ${{ github.repository_owner }}
 
-      # 3️⃣ Publicar SVG no branch output
-      - name: Push pacman-contribution-graph.svg to output branch
+      - name: Push pacman-contribution-graph.svg to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
-          build_dir: "."   # SVG gerado na raiz
+          build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
