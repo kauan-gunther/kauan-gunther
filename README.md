@@ -47,7 +47,7 @@
 <hr style="border: 0.1px solid #30363d; margin: 20px 0;">
 
 <div align="center">
-  <h3>Connect with me</h3>
+  <h3>Connect With Me</h3>
   <a href="https://www.facebook.com/kauan-gunther" target="_blank">
     <img src="https://img.shields.io/badge/Facebook-32CD32?style=flat-square&logo=facebook&logoColor=black"/>
   </a>
