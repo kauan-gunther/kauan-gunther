@@ -24,9 +24,6 @@
   <img src="https://skillicons.dev/icons?i=figma" height="65">
   <img src="https://skillicons.dev/icons?i=css" height="65">
   <img src="https://skillicons.dev/icons?i=vue" height="65">
-  <img src="https://skillicons.dev/icons?i=django" height="65">
-  <img src="https://skillicons.dev/icons?i=mysql" height="65">
-  <img src="https://skillicons.dev/icons?i=python" height="65">
 
 </div>
 
